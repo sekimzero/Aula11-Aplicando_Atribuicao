@@ -1,7 +1,7 @@
 ﻿
 namespace Aula11_Atribuicao
 {
-    internal class LocalizacaoFilme : ListaDeFilmes
+    internal class Localizacao : Apresentacao
     {
         public string buscarNomeDoFilmePeloIndice(int indiceDoFilme)
         {

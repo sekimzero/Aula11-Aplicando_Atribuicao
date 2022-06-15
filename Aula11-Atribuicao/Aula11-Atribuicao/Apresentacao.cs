@@ -1,7 +1,7 @@
 ﻿
 namespace Aula11_Atribuicao
 {
-    internal class ApresentacaoFilmes : ListaDeFilmes
+    internal class Apresentacao : ListaDeFilmes
     {
 
         // 1.1. Apresenta todos os filmes da lista separados por ponto e vírgula.
@@ -21,17 +21,20 @@ namespace Aula11_Atribuicao
         }
 
         // 1.6. Listar todos os filmes com seu índice/posição na lista.
-        public String[] listarTodosOsFilmesComSeuIndiceNaLista()
+        public string listarTodosOsFilmesComSeuIndiceNaLista()
         {
-            string[] listaComIndice = new string[listaDeFilmes.Length];
-            int count;
-            for (count = 0; count < listaDeFilmes.Length; count++)
+            string lista = "";
+            for (int i = 0; i < listaDeFilmes.Length; i++)
             {
-                listaComIndice[count] = $"{count} - {listaDeFilmes[count]}";
+                lista += ($"    indice:{i} -  conteudo:{listaDeFilmes[i]}; \r\n");
             }
+            return lista;
 
-            return listaComIndice;
+        }
 
+        public int apresentarQuantidadeDeFilmes()
+        {
+            return listaDeFilmes.Length;
         }
 
     }
