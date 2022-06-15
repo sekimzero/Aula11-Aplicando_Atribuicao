@@ -7,7 +7,7 @@
         {
             static void Main(string[] args)
             {
-                Funcoes resposta = new Funcoes(ListaDeFilmes.listaDeFilmes);
+                
                 // Resultado esperado em sua solução.
                 Console.WriteLine("---------- Resultados da Atividade ----------");
 
